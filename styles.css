@@ -1,8 +1,9 @@
 body {
   background: #E8E8E8;
+  font-family: "Open Sans", sans-serif;
+  line-height: 130%;  
   max-width: 500px;
   margin: 20px auto;
-  font-family: "Open Sans", sans-serif;
 }
 
 nav {
