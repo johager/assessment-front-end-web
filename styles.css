@@ -1,14 +1,13 @@
 body {
-  background: #ddd;
-  margin: 1rem;
-  padding: 1rem;
+  background: #E8E8E8;
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 20px auto;
   font-family: "Open Sans", sans-serif;
 }
 
 nav {
-	border-bottom: 2px solid orange;
+	border-bottom: 1px solid #005449;
+	padding-bottom: 8px;
 }
 
 ol {
@@ -20,19 +19,140 @@ ol {
 	display: inline;
 }
 
-a {
-	color: orange;
+h1 {
+	font-size: 2.3em;
+	font-weight: bold;
+	color: #005449;
+	margin: 25px 0px 20px 0px;
+}
+  
+h2 {
+	font-size: 1.6em;
+	font-style: italic;
+	color: #005449;
+	margin: 25px 0px 10px 0px;
 }
 
-a:visited {
-	color: crimson;
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #005449;
+	margin: 15px 0px 10px 0px;
+  }
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
+a:link, a:visited, a:active {
+	color: #005449;
+	text-decoration: none;
+  }
+  
+a:hover {
+	color: #467C6B;
+	text-decoration: underline;
+}
 
 input {
 	display: block;
 }
 
-img {
+input[type=checkbox] {
+	display: inline;
+	margin: 5px 0px 5px 30px;
+}
+
+button {
+	color: #005449;
+	background-color: #BBCBC9;
+	font-size: 1.1em;
+	font-weight: bold;
+	border: 2px solid #005449;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 8px;
+}
+
+.button {
+	background-color: yellow;
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: 50px;
+}
+
+/* ul.sublist {
+	list-style-type: circle;
+	margin-bottom: 8px;
+} */
+
+li {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.flexBox {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.flexBox div {
+	display: inline;
+	text-align: center;
+	background-color: #BBCBC9;
+	border: 1px solid #005449;
+	padding: 10px;
+	margin: 10px;
+}
+
+.square {
+	height: 100px;
+	width: 100px;
+}
+
+.rectangle {
+	height: 50px;
+	width: 150px;
+}
+
+.roundedRect {
+	height: 50px;
+	width: 150px;
+	border-radius: 15px;
+}
+
+.circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.homeImg {
 	max-width: 300px;
+}
+
+.interest {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.interest img {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+#doText {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #005449;
+	margin-left: 25px;
 }

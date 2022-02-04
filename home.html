@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Homepage</title>
+	<link href="reset.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
 
 </head>
 <body>
@@ -17,8 +19,20 @@
 	<content>
 		<h1>Welcome to this little website.</h1>
 		<!-- insert hello world here -->
+		<p>Hello World</p>
 
-		<img src="https://pbs.twimg.com/profile_images/1267905793610772480/rks7KARB_400x400.jpg">
+		<!-- <img src="https://pbs.twimg.com/profile_images/1267905793610772480/rks7KARB_400x400.jpg"> -->
+		<!-- <img class="homeImg" src="./cat.jpeg>"> -->
+		<img class="homeImg" src="./cat.jpeg">
+
+		<p>Welcome to my page.</p>
+
+		<ul>
+			<li>I'm glad you like cats</li>
+			<li>Compliment 2</li>
+			<li>Compliment 3</li>
+			<li>Compliment 4</li>
+		</ul>
 
 		<h2>Contact Us</h2>
 		<form id="contact">
@@ -28,8 +42,11 @@
 			Message:
 			<input type="textarea">
 
-			<input type="submit">
-
+			How did you hear about this website?<br>
+			<input type="checkbox" name="howHeard" value="google">Google<br>
+			<input type="checkbox" name="howHeard" value="aFriend">A friend<br>
+			<input type="checkbox" name="howHeard" value="other">Other<br>
+			<button>Submit</button>
 
 		</form>
 
