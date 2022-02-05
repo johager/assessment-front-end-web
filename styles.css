@@ -3,10 +3,11 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 130%;  
   max-width: 500px;
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
 }
 
 nav {
+	font-family: Ariel, sans-serif;
 	border-bottom: 1px solid #005449;
 	padding-bottom: 8px;
 }
@@ -24,7 +25,7 @@ h1 {
 	font-size: 2.3em;
 	font-weight: bold;
 	color: #005449;
-	margin: 25px 0px 20px 0px;
+	margin: 35px 0px 20px 0px;
 }
   
 h2 {
@@ -48,6 +49,10 @@ p {
 	margin-bottom: 10px;
 }
 
+a {
+	font-weight: bold;
+}
+
 a:link, a:visited, a:active {
 	color: #005449;
 	text-decoration: none;
@@ -64,7 +69,7 @@ input {
 
 input[type=checkbox] {
 	display: inline;
-	margin: 5px 0px 5px 30px;
+	margin: 5px 10px 5px 30px;
 }
 
 button {
@@ -74,12 +79,13 @@ button {
 	font-weight: bold;
 	border: 2px solid #005449;
 	border-radius: 8px;
-	padding: 10px;
+	padding: 10px 20px;
 	margin: 8px;
 }
 
 .button {
 	background-color: yellow;
+	padding: 20px 30px;
 }
 
 ul {
@@ -87,14 +93,25 @@ ul {
 	margin-left: 50px;
 }
 
-/* ul.sublist {
+ul.subList {
 	list-style-type: circle;
-	margin-bottom: 8px;
-} */
+	margin-bottom: 16px;
+}
 
 li {
 	margin-top: 8px;
 	margin-bottom: 8px;
+}
+
+footer {
+	color: #005449;
+	font-family: Ariel, sans-serif;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #005449;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 20px
 }
 
 .flexBox {
@@ -103,8 +120,10 @@ li {
 	align-items: center;
 }
 
-.flexBox div {
-	display: inline;
+.flexBox > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	background-color: #BBCBC9;
 	border: 1px solid #005449;
@@ -134,7 +153,7 @@ li {
 	border-radius: 50%;
 }
 .homeImg {
-	max-width: 300px;
+	width: 100%;
 }
 
 .interest {
