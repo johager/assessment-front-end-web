@@ -23,7 +23,10 @@ function showRecommendation(event) {
     const restaurant = restaurants[index]
     let {name, location, url} = restaurant
     recommendation.style.display = 'block'
-    recommendation.innerHTML = `I highly recommend <a href="${url}">${name}</a> in ${location}.`
+    const a = recommendation.querySelector('a')
+    a.href = url
+    a.textContent = name
+    recommendation.querySelector('span').textContent = location
 }
 
 document.querySelector('button').addEventListener('click', showRecommendation)
